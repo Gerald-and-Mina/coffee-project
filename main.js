@@ -48,6 +48,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
+    console.log(filteredCoffees)
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -70,11 +71,12 @@ var coffees = [
 ];
 
 var tbody = document.querySelector('#coffees');
+console.log(tbody)
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSearch = document.querySelector('#coffee-search');
 var submitEvent = document.querySelector('#roast-selection');
-tbody.innerHTML = renderCoffees(coffees);
+// tbody.innerHTML = renderCoffees(coffees);
 
 // submitButton.addEventListener('click', updateCoffees);
 submitEvent.addEventListener('change', updateCoffees);

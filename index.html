@@ -8,47 +8,77 @@
 <!--    bootstrap-->
 </head>
 <body>
+<div class="container">
     <h1>Coffee!</h1>
+    <div class="spacer-row"></div>
+    <div class="row">
+        <div class="text-left col-6">
+            <ul class="coffee-list" id="coffees"></ul>
+        </div>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
+        <form>
+            <label for="roast-selection">
+                <h5>Roast</h5>
+            </label>
+            <select id="roast-selection">
+                <option value="all">all</option>
+                <option value="light">light</option>
+                <option value="medium">medium</option>
+                <option value="dark">dark</option>
 
-            <option value="all">all</option>
-            <option value="light">light</option>
-            <option value="medium">medium</option>
-            <option value="dark">dark</option>
-
-        </select>
-        <input id="submit" type="submit" />
-    </form>
-    <div id="coffees"></div>
-
-
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees"></tbody>-->
-<!--    </table>-->
+            </select>
+            <br>
+            <!--        <input id="submit" type="submit" />-->
+            <label for="coffee-search">
+                <h5>Coffee Name</h5>
+            </label>
+            <input onkeyup="searchCoffees()" type="text" id="coffee-search" placeholder="Type coffee name">
 
 
+            <br>
+            <!--        second coffee search-->
+            <h5>Add a coffee</h5>
+            <label for="roast-selection-2">
+                <h5>Roast</h5>
+            </label>
+            <select class="form-control form-control-lg" name="roast-selection" id="roast-selection-2">
+                <option value="all">all</option>
+                <option value="light">light</option>
+                <option value="medium">medium</option>
+                <option value="dark">dark</option>
+            </select>
+            <br>
+            <label>
+                <h5>Name</h5>
+            </label>
+            <input type="text" id="coffee" name="name" class="form-control">
 
 
+            <br>
+            <input type="submit" placeholder="Submit" id="submit">
+        </form>
+    </div>
 
 
+    <!--    <table>-->
+    <!--        <thead>-->
+    <!--            <tr>-->
+    <!--                <th>ID</th>-->
+    <!--                <th>NAME</th>-->
+    <!--                <th>ROAST</th>-->
+    <!--            </tr>-->
+    <!--        </thead>-->
+    <!--        <tbody id="coffees"></tbody>-->
+    <!--    </table>-->
 
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<!--    bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <!--    bootstrap-->
     <script src="main.js"></script>
 </body>
 </html>
