@@ -51,7 +51,21 @@ function updateCoffees(e) {
     console.log(filteredCoffees)
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
+function addCoffee(){
+    var addCoffee={};
+    addCoffee.name = addName.value;
+    addCoffee.id = coffees.length +1 ;
+    addCoffee.all = 'all';
+    addCoffee.roast = roastSelection2.value;
+    // for (var i = 0; i < coffees.length; i++) {
+    //     if (coffees[i].name.toLowerCase().indexOf(value.toLowerCase()) > -1) {
+    //         // console.log(coffees[i].name);
+    //         coffees.push(addCoffee[i]);
+    //     }
+    // }
+    coffees.push(addCoffee);
+    tbody.innerHTML = renderCoffees(coffees)
+}
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light', all:"all"},
@@ -72,11 +86,12 @@ var coffees = [
 
 var tbody = document.querySelector('#coffees');
 console.log(tbody)
-var submitButton = document.querySelector('#submit');
+var submitButton = document.querySelector('#submitButton');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSearch = document.querySelector('#coffee-search');
 var submitEvent = document.querySelector('#roast-selection');
 // tbody.innerHTML = renderCoffees(coffees);
-
-// submitButton.addEventListener('click', updateCoffees);
-submitEvent.addEventListener('change', updateCoffees);
+var addName = document.querySelector('#name');
+var roastSelection2 = document.querySelector('#roast-selection-2');
+submitButton.addEventListener('click', addCoffee);
+submitEvent.addEventListener('input', updateCoffees);

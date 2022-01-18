@@ -1,14 +1,54 @@
+
+.body{
+    width:100%;
+
+}
+
 .jumbotron{
 background-image: url("pexels-toni-cuenca-585750.jpg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100%
 }
 .jumbotron>h1{
     width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    color: #897170;
 }
+
+
 #bg-img{
     background-image: url("pexels-jessica-lewis-creative-867470.jpg"); background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+h2{
+    font-family: 'Caveat Brush', cursive;
+    color: #3D665A;
+}
+h4{
+    font-family: 'Caveat Brush', cursive;
+    color: #4E3634;
+
+}
+
+ul{
+    list-style-image: url("coffeebean3.png");
+    color: #F2C7C3;
+    font-family: 'Caveat Brush', cursive;
+    ;
+    font-size: x-large;
+}
+button{
+    background-color: #F2C7C3;
+    padding: 10px 15px;
+    color: #4E3634;
+    border: grey;
+    font-family: 'Caveat Brush', cursive;
+    margin-bottom: 5px;
+}
+
+
+
+

@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!--    bootstrap-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&display=swap" rel="stylesheet">
+<!--    google font-->
 </head>
 <body>
 <div class="container" id="bg-img">
-    <div class="jumbotron jumbotron-fluid container">
-        <h1 class="text-center text-light"> Mina's Coffee!</h1>
+    <div class="jumbotron jumbotron-fluid d-none d-lg-block">
+        <h1 class="text-center display-4"> HIPSTER COFFEE LOG</h1>
     </div>
 <!--    <div class="spacer-row"></div>-->
-    <div class="row">
-        <div class="text-left col-6">
+    <div class="row d-flex">
+        <div class="text-center col-6 align-items-center mt-5 coffee-list">
             <ul class="coffee-list text-light" id="coffees"></ul>
         </div>
+<!--top form-->
 
-        <form>
+        <form class="text-center col-5" >
             <label for="roast-selection">
                 <div class="form-group">
-                    <h5>Roast</h5>
+                    <h4>ROAST</h4>
                 </div>
             </label>
             <select class="form-control form-control-lg" id="roast-selection">
@@ -33,10 +38,10 @@
 
             </select>
             <br>
-            <!--        <input id="submit" type="submit" />-->
+<!--                    <input id="submit" type="submit" />-->
             <div class="form-group">
                 <label for="coffee-search">
-                    <h5>Coffee Name</h5>
+                    <h4>COFFEE NAME</h4>
                 </label>
                 <input class="form-control" onkeyup="searchCoffees()" type="text" id="coffee-search" placeholder="Type coffee name">
             </div>
@@ -44,9 +49,10 @@
 
             <br>
             <!--        second coffee search-->
-            <h5>Add a coffee</h5>
+
+            <h2>ADD A COFFEE</h2>
             <label for="roast-selection-2">
-                <h5>Roast</h5>
+                <h4>ROAST</h4>
             </label>
             <select class="form-control form-control-lg" name="roast-selection" id="roast-selection-2">
                 <option value="all">all</option>
@@ -56,13 +62,13 @@
             </select>
             <br>
             <label>
-                <h5>Name</h5>
+                <h4>NAME</h4>
             </label>
-            <input type="text" id="coffee" name="name" class="form-control">
+            <input type="text" id="name" name="name" class="form-control">
 
 
             <br>
-            <input type="submit" placeholder="Submit" id="submit">
+            <button class="rounded-pill" type="button" value="submit" id="submitButton">add coffee here</button>
         </form>
     </div>
 
