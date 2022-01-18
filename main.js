@@ -1,8 +1,8 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<li><a><span class = "col-6 coffee-name">' + coffee.name +'</span>' + "";
-    html += '<span class="coffee-roast">' + coffee.roast +'</span></a></li>';
+    var html = '<li><span class = "col-6">' + coffee.name +'</span>' + "";
+    html += '<span>' + coffee.roast +'</span></li>';
     return html;
 
 

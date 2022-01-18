@@ -1,11 +1,18 @@
 
-.body{
+body{
     width:100%;
+    margin: 0;
+    background-image: url("pexels-jessica-lewis-creative-867470.jpg"); background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+    /*cursor: pointer;*/
 }
-
+.right-box{
+    cursor: pointer;
+}
 .jumbotron{
-background-image: url("pexels-toni-cuenca-585750.jpg") ;
+    background-image: url("pexels-toni-cuenca-585750.jpg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,11 +25,11 @@ background-image: url("pexels-toni-cuenca-585750.jpg") ;
 }
 
 
-#bg-img{
-    background-image: url("pexels-jessica-lewis-creative-867470.jpg"); background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+/*#bg-img{*/
+/*    background-image: url("pexels-jessica-lewis-creative-867470.jpg"); background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+
 h2{
     font-family: 'Caveat Brush', cursive;
     color: #3D665A;
@@ -35,11 +42,13 @@ h4{
 
 ul{
     list-style-image: url("coffeebean3.png");
-    color: #F2C7C3;
+    color:#4E3634 ;
     font-family: 'Caveat Brush', cursive;
     ;
     font-size: x-large;
 }
+
+
 .submit-button{
     background-color: #F2C7C3;
     padding: 10px 15px;
@@ -47,6 +56,11 @@ ul{
     border: grey;
     font-family: 'Caveat Brush', cursive;
     margin-bottom: 5px;
+    opacity:0.5
+}
+button:hover{
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 

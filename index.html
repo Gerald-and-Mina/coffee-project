@@ -11,20 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&display=swap" rel="stylesheet">
 <!--    google font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!--    font awesome-->
 </head>
 <body>
-<div class="container" id="bg-img">
+<!--<div class="container" id="bg-img">-->
     <div class="jumbotron jumbotron-fluid d-none d-lg-block">
-        <h1 class="text-center display-4"> HIPSTER COFFEE LOG</h1>
+        <h1 class="text-center display-4">COFFEE LOG</h1>
     </div>
 <!--    <div class="spacer-row"></div>-->
+
+    <div class="container">
     <div class="row d-flex">
-        <div class="text-center col-6 align-items-center mt-5 coffee-list">
-            <ul class="coffee-list text-light" id="coffees"></ul>
+        <div class="text-center col-6 align-items-center mt-5 right-column">
+            <ul class="text-light text-center" id="coffees"></ul>
         </div>
 <!--top form-->
 
-        <form class="text-center col-5" >
+        <form class="text-center col-5 right-box mr-3" >
             <label for="roast-selection">
                 <div class="form-group">
                     <h4>ROAST</h4>
@@ -55,7 +59,6 @@
                 <h4>ROAST</h4>
             </label>
             <select class="form-control form-control-lg" name="roast-selection" id="roast-selection-2">
-                <option value="all">all</option>
                 <option value="light">light</option>
                 <option value="medium">medium</option>
                 <option value="dark">dark</option>
@@ -71,6 +74,8 @@
             <button class="rounded-pill submit-button" type="button" value="submit" id="submitButton">ADD COFFEE HERE</button>
         </form>
     </div>
+    </div>
+
 
 
     <!--    <table>-->
@@ -83,7 +88,7 @@
     <!--        </thead>-->
     <!--        <tbody id="coffees"></tbody>-->
     <!--    </table>-->
-
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -93,6 +98,6 @@
             crossorigin="anonymous"></script>
     <!--    bootstrap-->
     <script src="main.js"></script>
-</div>
+
 </body>
 </html>
