@@ -40,7 +40,7 @@ ul{
     ;
     font-size: x-large;
 }
-button{
+.submit-button{
     background-color: #F2C7C3;
     padding: 10px 15px;
     color: #4E3634;
