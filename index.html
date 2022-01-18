@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<!--    bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--    bootstrap-->
 </head>
 <body>
 <div class="container">
-    <h1>Coffee!</h1>
+    <div class="jumbotron jumbotron-fluid container">
+        <h1 class="text-center text-light"> Mina's Coffee!</h1>
+    </div>
     <div class="spacer-row"></div>
     <div class="row">
         <div class="text-left col-6">
@@ -18,9 +21,11 @@
 
         <form>
             <label for="roast-selection">
-                <h5>Roast</h5>
+                <div class="form-group">
+                    <h5>Roast</h5>
+                </div>
             </label>
-            <select id="roast-selection">
+            <select class="form-control form-control-lg" id="roast-selection">
                 <option value="all">all</option>
                 <option value="light">light</option>
                 <option value="medium">medium</option>
@@ -29,10 +34,12 @@
             </select>
             <br>
             <!--        <input id="submit" type="submit" />-->
-            <label for="coffee-search">
-                <h5>Coffee Name</h5>
-            </label>
-            <input onkeyup="searchCoffees()" type="text" id="coffee-search" placeholder="Type coffee name">
+            <div class="form-group">
+                <label for="coffee-search">
+                    <h5>Coffee Name</h5>
+                </label>
+                <input class="form-control" onkeyup="searchCoffees()" type="text" id="coffee-search" placeholder="Type coffee name">
+            </div>
 
 
             <br>
@@ -80,5 +87,6 @@
             crossorigin="anonymous"></script>
     <!--    bootstrap-->
     <script src="main.js"></script>
+</div>
 </body>
 </html>
